@@ -19,14 +19,27 @@ const Logo = ({
       className={classes}
     >
       <h2 className="m-0">
-        <Link to="/">
-          <Image
-            src={require('./../../../assets/images/logo.svg')}
-            alt="Tidy"
-            width={32}
-            height={32} />
-        </Link>
-        <span>BotBloc</span>
+
+        
+        <ul>
+          <li>
+          <Link to="/">
+            <Image
+              src={require('./../../../assets/images/logo.svg')}
+              alt="Tidy"
+              width={32}
+              height={32} />
+          </Link>
+          </li>
+        </ul> 
+
+        <ul>
+         
+            <div>BotBloc</div>
+          
+        </ul>
+        
+        
       </h2>
     </div>
   );

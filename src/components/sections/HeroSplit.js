@@ -78,13 +78,16 @@ class HeroSplit extends React.Component {
           <div className={innerClasses}>
             <div className={splitClasses}>
               <div className="split-item">
+                <div></div>
                 <div className="hero-content split-item-content center-content-mobile reveal-from-top">
                   <h1 className="mt-0 mb-16">
-                    Landing template for startups
+                    BotBloc: Modular robot of the future
                   </h1>
                   <p className="mt-0 mb-32">
                     Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
                   </p>
+
+                  {/*
                   <ButtonGroup>
                     <Button tag="a" color="primary" href="https://cruip.com/" wideMobile>
                       Pricing and plans
@@ -92,22 +95,27 @@ class HeroSplit extends React.Component {
                     <Button tag="a" color="dark" href="https://cruip.com/" wideMobile>
                       Learn more
                     </Button>                    
-                  </ButtonGroup>
+                  </ButtonGroup> */}
                 </div>
+                {/*
                 <div className="hero-figure split-item-image split-item-image-fill illustration-element-01 reveal-from-bottom">
+                  
                   <a
+                    
                     data-video="https://player.vimeo.com/video/174002812"
                     href="#0"
                     aria-controls="video-modal"
-                    onClick={this.openVideoModal}
+                    onClick={this.openVideoModal} 
                   >
                     <Image
-                      src={require('./../../assets/images/video-placeholder.jpg')}
+                       src={require('./../../assets/images/video-placeholder.jpg')}  
                       alt="Hero"
                       width={528}
                       height={396} />
                   </a>
-                </div>
+                  
+                </div> 
+                */} 
                 <Modal
                   id="video-modal"
                   show={this.state.videoModalActive}

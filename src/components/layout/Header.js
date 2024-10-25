@@ -121,7 +121,7 @@ class Header extends React.Component {
                         navPosition && `header-nav-${navPosition}`
                       )}>
                       <li>
-                        <Link to="/secondary/" onClick={this.closeMenu}>Secondary page</Link>
+                        {/*<Link to="/secondary/" onClick={this.closeMenu}>Secondary page</Link>*/}
                       </li>
                     </ul>
                     {!hideSignin &&
