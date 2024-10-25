@@ -18,7 +18,7 @@ const Logo = ({
       {...props}
       className={classes}
     >
-      <h1 className="m-0">
+      <h2 className="m-0">
         <Link to="/">
           <Image
             src={require('./../../../assets/images/logo.svg')}
@@ -26,7 +26,8 @@ const Logo = ({
             width={32}
             height={32} />
         </Link>
-      </h1>
+        <span>BotBloc</span>
+      </h2>
     </div>
   );
 }
