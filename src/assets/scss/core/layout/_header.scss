@@ -1,9 +1,11 @@
 .site-header {
-	position: absolute !important;
+	position: fixed !important;
 	top: 0;
 	width: 100%;
+	opacity: 90%;
 	z-index: 10 !important;
-	background: color-bg(header);
+	background: get-color(dark, 1);
+	//background-color: aqua;
 
 	+ .site-content {
 
@@ -18,18 +20,22 @@
 }
 
 .site-header-inner {
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
 	height: $header-height__mobile;
+	position: sticky;
+	top: 0;
 }
 
 .header-nav {
 	flex-grow: 1;
+	
 
 	.header-nav-inner {
 		display: flex;
 		flex-grow: 1;
+		width:100%;
 	}
 
     ul {

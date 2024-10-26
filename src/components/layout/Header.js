@@ -97,6 +97,7 @@ class Header extends React.Component {
             <Logo />
             {!hideNav &&
               <React.Fragment>
+                {/** 
                 <button
                   ref={this.hamburger}
                   className="header-nav-toggle"
@@ -104,9 +105,9 @@ class Header extends React.Component {
                 >
                   <span className="screen-reader">Menu</span>
                   <span className="hamburger">
-                    <span className="hamburger-inner"></span>
+                    <span className="hamburger-inner">ghi</span>
                   </span>
-                </button>
+                </button>*/}
                 <nav
                   ref={this.nav}
                   className={
