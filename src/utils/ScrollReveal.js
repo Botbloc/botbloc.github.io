@@ -18,6 +18,8 @@ class ScrollReveal extends React.Component {
   };
 
   revealElements = () => {
+    console.log(this.checkComplete());
+    
     if (this.checkComplete()) return;
     for (let i = 0; i < this.state.revealEl.length; i++) {
       let el = this.state.revealEl[i];
@@ -48,6 +50,9 @@ class ScrollReveal extends React.Component {
     }, 100);
   };
 
+
+
+  // listeners
   handleListeners = () => {
     if (!this.checkComplete()) return;
     window.removeEventListener('scroll', this.handleScroll);
@@ -67,6 +72,7 @@ class ScrollReveal extends React.Component {
   }, 30);
 
   render() {
+    console.log("element revealed: " , this.state);
     return (
       <React.Fragment>
         {this.props.children()}

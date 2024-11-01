@@ -20,7 +20,7 @@ const Logo = ({
     >
       <h2 className="m-0">
 
-        
+        {/*
         <ul>
           <li>
           <Link to="/">
@@ -31,7 +31,7 @@ const Logo = ({
               height={32} />
           </Link>
           </li>
-        </ul> 
+        </ul> */}
 
         <ul>
          
