@@ -42,9 +42,11 @@ class ScrollReveal extends React.Component {
     setTimeout(() => {
       this.setState({ revealEl: document.querySelectorAll('[class*=reveal-]') }, () => {
         if (!this.checkComplete()) {
+          console.log("scroll init with check incomplete");
           window.addEventListener('scroll', this.handleScroll);
           window.addEventListener('resize', this.handleResize);
         }
+        console.log("scroll init with check complete");
         this.revealElements();
       });
     }, 100);
@@ -73,6 +75,7 @@ class ScrollReveal extends React.Component {
 
   render() {
     console.log("element revealed: " , this.state);
+    console.log("prop: ", this.props.children());
     return (
       <React.Fragment>
         {this.props.children()}

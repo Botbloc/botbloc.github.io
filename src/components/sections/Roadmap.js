@@ -44,34 +44,39 @@ class Roadmap extends React.Component {
     );
 
     const sectionHeader = {
-      title: 'Product roadmap',
-      paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus in ornare.'
+      title: 'Product Roadmap',
+      paragraph: 'This is our roadmap of product developments and major events, as well as projected schedules in the upcoming future.'
     };
+
+    const timeLineItems =[
+      {
+        title : "June 2024",
+        content: "Having our first robot prototype"
+      }
+      ,{
+        title : "December 2024",
+        content: "Undergoing pitching events for further investments"
+      }
+      ]
+    
 
     return (
       <section
         {...props}
         className={outerClasses}
+        id = "roadmap-section"
       >
         <div className="container">
           <div className={innerClasses}>
             <SectionHeader data={sectionHeader} className="center-content" />
             <Timeline>
-              <TimelineItem title="November 2019">
-                Deployed a high-quality first release and conducted a market validation test
-              </TimelineItem>
-              <TimelineItem title="December 2019">
-                Deployed a high-quality first release and conducted a market validation test
-              </TimelineItem>
-              <TimelineItem title="January 2020">
-                Deployed a high-quality first release and conducted a market validation test
-              </TimelineItem>
-              <TimelineItem title="February 2020">
-                Deployed a high-quality first release and conducted a market validation test
-              </TimelineItem>
-              <TimelineItem title="March 2020">
-                Deployed a high-quality first release and conducted a market validation test
-              </TimelineItem>
+              {
+                timeLineItems.map((item) => (
+                  <TimelineItem title= {item.title} >
+                    {item.content}
+                  </TimelineItem>
+                ))
+              }
             </Timeline>
           </div>
         </div>

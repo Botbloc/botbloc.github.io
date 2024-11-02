@@ -97,7 +97,7 @@ class Header extends React.Component {
             <Logo />
             {!hideNav &&
               <React.Fragment>
-                {/** 
+                
                 <button
                   ref={this.hamburger}
                   className="header-nav-toggle"
@@ -105,9 +105,9 @@ class Header extends React.Component {
                 >
                   <span className="screen-reader">Menu</span>
                   <span className="hamburger">
-                    <span className="hamburger-inner">ghi</span>
+                    <span className="hamburger-inner">5</span>
                   </span>
-                </button>*/}
+                </button>
                 <nav
                   ref={this.nav}
                   className={
@@ -122,7 +122,13 @@ class Header extends React.Component {
                         navPosition && `header-nav-${navPosition}`
                       )}>
                       <li>
-                        {/*<Link to="/secondary/" onClick={this.closeMenu}>Secondary page</Link>*/}
+                        <Link to="#hero-section" onClick={this.closeMenu}>Home</Link>
+                      </li>
+                      <li>
+                        <Link to="#feature-section" onClick={this.closeMenu}>Feature</Link>
+                      </li>
+                      <li>
+                        <Link to="#roadmap-section" onClick={this.closeMenu}>Roadmap</Link>
                       </li>
                     </ul>
                     {!hideSignin &&
@@ -130,7 +136,7 @@ class Header extends React.Component {
                         className="list-reset header-nav-right"
                       >
                         <li>
-                          <Link to="/signup/" className="button button-primary button-wide-mobile button-sm" onClick={this.closeMenu}>Sign up</Link>
+                          <Link to="/signup" className="button button-primary button-wide-mobile button-sm" onClick={this.closeMenu}>Sign up</Link>
                         </li>
                       </ul>}
                   </div>

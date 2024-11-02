@@ -14,6 +14,7 @@ import Secondary from './views/Secondary';
 import Login from './views/Login';
 import Signup from './views/Signup';
 
+
 class App extends React.Component {
 
   componentDidMount() {
@@ -27,6 +28,8 @@ class App extends React.Component {
       this.refs.scrollReveal.init();
     }
   }
+
+ 
 
   render() {
     return (

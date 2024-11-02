@@ -73,6 +73,7 @@ class HeroSplit extends React.Component {
       <section
         {...props}
         className={outerClasses}
+        id = "hero-section"
       >
         <div className="container">
           <div className={innerClasses}>
@@ -84,7 +85,7 @@ class HeroSplit extends React.Component {
                     BotBloc: Modular robot of the future
                   </h1>
                   <p className="mt-0 mb-32">
-                    Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
+                    Inspired by the concept of multi-purpose and robustness, we are didicated to create a versatile platform of robotic system providing reliable services and various functionalities for advancement in productivity and in aid of human life.
                   </p>
 
                   {/*
