@@ -2,6 +2,7 @@
     display: inline-flex;
 	border-radius: 50%;
     background: get-color(primary, 1);  
+    stroke: white;
 }
 
 .features-tiles-item-content {
@@ -10,3 +11,4 @@
         @include font-family(heading);
     }
 }
+

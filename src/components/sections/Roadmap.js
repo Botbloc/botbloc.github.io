@@ -50,13 +50,34 @@ class Roadmap extends React.Component {
 
     const timeLineItems =[
       {
-        title : "June 2024",
-        content: "Having our first robot prototype"
+        title : "Q2 2024",
+        content: "Project Initiation"
       }
       ,{
-        title : "December 2024",
-        content: "Undergoing pitching events for further investments"
+        title : "Q4 2024",
+        content: "First Prototype & Financing"
       }
+      ,{
+        title : "2025",
+        content: "Pilot programs, Robot core and OS completion"
+      }
+      ,{
+        title : "2026",
+        content: "Developer partnership scheme"
+      }
+      ,{
+        title : "2027",
+        content: "Co-branded robots, Launch of marketplace and Trial release"
+      }
+      ,{
+        title : "2028",
+        content: "Mass release"
+      }
+      ,{
+        title : "2029+",
+        content: "Global expansion and continuous Development"
+      }
+
       ]
     
 

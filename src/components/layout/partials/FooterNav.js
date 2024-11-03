@@ -19,12 +19,16 @@ const FooterNav = ({
     >
       <ul className="list-reset">
         <li>
+          <a href="mailto:business@botbloc.com">Email: business@botbloc.com</a>
+        </li>
+        {/* 
+        <li>
           <Link to="/contact/">Contact</Link>
         </li>
         <li>
           <Link to="/about-us/">About us</Link>
         </li>
-        {/* 
+        
         <li>
           <Link to="/faqs/">FAQ's</Link>
         </li>

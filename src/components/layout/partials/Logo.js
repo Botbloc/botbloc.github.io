@@ -17,31 +17,32 @@ const Logo = ({
     <div
       {...props}
       className={classes}
-    >
-      <h2 className="m-0">
+      
+    > 
+     
+        <h2 className="m-0" >
 
-        {/*
-        <ul>
-          <li>
-          <Link to="/">
-            <Image
-              src={require('./../../../assets/images/logo.svg')}
-              alt="Tidy"
-              width={32}
-              height={32} />
-          </Link>
-          </li>
-        </ul> */}
-
-        <ul>
-         
-            <div>BotBloc</div>
           
-        </ul>
+          
+            
+            <Link to="/">
+              <Image
+                src={require('./../../../assets/images/BotBloc.jpeg')}
+                /*src={require('./../../../assets/images/module-svgrepo-com (1).svg')}*/
+                alt="BotBloc"
+                width={48}
+                height={48} />
+            </Link>
+            
+
+        </h2>
+      
+      
         
-        
-      </h2>
+      
+      
     </div>
+    
   );
 }
 

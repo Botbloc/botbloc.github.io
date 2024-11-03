@@ -29,20 +29,23 @@ class Image extends React.Component {
   }
 
   placeholderSrc = (w, h) => {
-    return `data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}"%3E%3C/svg%3E`;
+    return `data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" style="fill:%23cccccc"%3E%3Crect width="${w}" height="${h}" /%3E%3C/svg%3E`;
+
   }
 
   handlePlaceholder = (img, placeholder) => {
     img.style.display = 'none';
     img.before(placeholder);
     placeholder.src = this.placeholderSrc(
-      img.getAttribute('width') || 0,
-      img.getAttribute('height') || 0
+      img.getAttribute('width') || 100,
+      img.getAttribute('height') || 100
     );
     placeholder.width = img.getAttribute('width');
     placeholder.height = img.getAttribute('height');
     placeholder.style.opacity = '0';
     img.className && placeholder.classList.add(img.className);
+    //console.log("img.className",img.className);
+    //console.log("placeholder.classList",placeholder.classList);
 
     img.addEventListener('load', () => {
       placeholder.remove();
@@ -51,9 +54,14 @@ class Image extends React.Component {
         isLoaded: true
       })
     });
+
+    img.addEventListener('error', (e) => {
+      console.log("Error loading image:", e);
+    });
   }
 
   render() {
+    
 
     const {
       className,
@@ -63,6 +71,7 @@ class Image extends React.Component {
       alt,
       ...props
     } = this.props;
+   // {console.log("source: ",src)}
 
     return (
       <img

@@ -3,7 +3,8 @@ import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
-
+import Icon_modular from "./../../assets/images/module-svgrepo-com (1).svg"
+import Icon1 from "./../../assets/images/icon-modular.svg"
 const propTypes = {
   ...SectionTilesProps.types
 }
@@ -71,7 +72,8 @@ class FeaturesTiles extends React.Component {
                   <div className="features-tiles-item-header">
                     <div className="features-tiles-item-image mb-16">
                     <Image
-                        src={require('./../../assets/images/module-svgrepo-com (1).svg')}
+                        /*className = ""*/
+                        src={Icon_modular}
                         alt="Features tile icon 01"
                         width={64}
                         height={64} />
@@ -95,8 +97,8 @@ class FeaturesTiles extends React.Component {
                     <div className="features-tiles-item-image mb-16">
 
                     <svg
-                      width="64"
-                      height="64"
+                      width="16"
+                      height="16"
                       viewBox="0 0 16 16"
                       xmlns="http://www.w3.org/2000/svg">
                       <title>LinkedIn</title>

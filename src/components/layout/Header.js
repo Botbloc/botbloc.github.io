@@ -95,6 +95,7 @@ class Header extends React.Component {
               bottomDivider && 'has-bottom-divider'
             )}>
             <Logo />
+            <h3>BotBloc</h3>
             {!hideNav &&
               <React.Fragment>
                 
