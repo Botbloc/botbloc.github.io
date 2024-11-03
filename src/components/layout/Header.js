@@ -135,9 +135,15 @@ class Header extends React.Component {
                     {!hideSignin &&
                       <ul
                         className="list-reset header-nav-right"
-                      >
+                      >  
                         <li>
-                          <Link to="/signup" className="button button-primary button-wide-mobile button-sm" onClick={this.closeMenu}>Sign up</Link>
+                          {/*<Link to="/signup" className="button button-primary button-wide-mobile button-sm" onClick={this.closeMenu}>Sign up</Link>*/}
+                          
+
+                          <a href="https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=paqCANYIyE-0gk-IxtBvPkDmIERVABVNmV8EVNvfaVFUOEwySFpKSjhYN1hMSjZDTVY3MEI0MkFRQS4u&Token=90c758245d7e4d038cfb1666e0540740"
+                          className="button button-primary button-wide-mobile button-sm" target="_blank" >
+                            Sign up
+                          </a>
                         </li>
                       </ul>}
                   </div>
