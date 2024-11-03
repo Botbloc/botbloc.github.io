@@ -27,7 +27,7 @@ const Logo = ({
             
             <Link to="/">
               <Image
-                src={require('./../../../assets/images/BotBloc.jpeg')}
+                src={require('./../../../assets/images/BotBloc.png')}
                 /*src={require('./../../../assets/images/module-svgrepo-com (1).svg')}*/
                 alt="BotBloc"
                 width={48}

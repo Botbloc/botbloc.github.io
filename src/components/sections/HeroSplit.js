@@ -85,7 +85,7 @@ class HeroSplit extends React.Component {
                     BotBloc: Modular robot of the future
                   </h1>
                   <p className="mt-0 mb-32">
-                    Inspired by the concept of multi-purpose and robustness, we are didicated to create a versatile platform of robotic system providing reliable services and various functionalities for advancement in productivity and in aid of human life.
+                    Inspired by the concept of multi-purpose and robustness, we are dedicated to create a versatile platform of robotic system providing reliable services and various functionalities for advancement in productivity and in aid of human life.
                   </p>
 
                   {/*
